@@ -1,5 +1,21 @@
 Sunrise前哨戦Twitterシステム
 
+目的
+ 事前に設計したデータスキームでTwitterを実装できるか検証する
+ MongoDBが使えるやつかためす
+
+使う技術
+ PHP     v5.3.8
+ MySQL   v5.5.11
+ MongoDB v2.0.0
+
+できること
+ アカウント管理
+ つぶやく
+ フォローする/される
+ タイムライン表示
+ ユーザ/つぶやき検索
+
 コーディング規約
  Pear 標準コーディング規約を基本にしてください
  http://pear.php.net/manual/ja/standards.php
@@ -39,23 +55,8 @@ URL
 |-- index.php
 |-- config       設定ファイル
 |-- models       モデル
-|   |-- User.php
-|   |-- UserFollow.php
-|   |-- UserFollower.php
-|   |-- UserSession.php
-|   `-- UserTweet.php
 |-- views        ビュー
-|   |-- xxx
-|   |   `-- index.tpl
-|   `-- layout
-|       `-- default.tpl
 |-- controllers  コントローラ
-|   `-- xxx_controller.php
 `-- libs         ライブラリ
-    |-- Csrf.class.php
-    |-- Hash.class.php
-    |-- Random.class.php
-    |-- controller.class.php
-    |-- model.class.php
-    |-- util.php
-    `-- view.class.php
+
+作成 2011年 10月11日
