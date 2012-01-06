@@ -1,0 +1,23 @@
+<?php
+class UserSession extends Model {
+    public $collection = "user_sessions";
+    public $fields = array(
+            "user_id",
+            "session",
+            "session_ssl",
+            "created",
+            "updated",
+            );
+
+    public function countByUserId($user_id) {
+        return $this->db()->find(array("user_id" => $user_id))->count();
+    }
+    
+    public function findByUserId($user_id) {
+        return $this->db()->findOne(array("user_id" => $user_id));
+    }
+
+    public function findBySession($session) {
+        return $this->db()->findOne(array("session" => $session));
+    }
+}

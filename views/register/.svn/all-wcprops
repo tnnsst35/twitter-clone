@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/twitter/!svn/ver/4/trunk/views/register
+END
+index.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/twitter/!svn/ver/4/trunk/views/register/index.tpl
+END
+confirm.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/twitter/!svn/ver/4/trunk/views/register/confirm.tpl
+END
+finish.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/twitter/!svn/ver/4/trunk/views/register/finish.tpl
+END

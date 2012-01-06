@@ -1,0 +1,61 @@
+Sunrise前哨戦Twitterシステム
+
+コーディング規約
+ Pear 標準コーディング規約を基本にしてください
+ http://pear.php.net/manual/ja/standards.php
+ 文字コードはUTF-8
+ タブは半角スペース4つ
+ キャメルケースを使用します
+
+ OKな例 ===========================
+ join(",", $ary);
+
+ for ($i = 0;$i < 10;$i++) {
+     echo $i; 
+ }
+
+ if ($n < 10) {
+    echo $ary[$n]
+ }
+
+ NGな例 ===========================
+ join(",",$ary);
+
+ for($i=0;$i<10;$i++) {
+     echo $i;
+ }
+
+ if($n<10) {
+    echo $ary[$n]
+ }
+
+URL
+ http://service.tnnsst35.com/twitter/
+ mod_rewriteの設定で/home/service/twitter/以下へのアクセスは/home/service/twitter/index.phpにリダイレクトするようにしています
+
+ディレクトリ構成
+.
+|-- README
+|-- index.php
+|-- config       設定ファイル
+|-- models       モデル
+|   |-- User.php
+|   |-- UserFollow.php
+|   |-- UserFollower.php
+|   |-- UserSession.php
+|   `-- UserTweet.php
+|-- views        ビュー
+|   |-- xxx
+|   |   `-- index.tpl
+|   `-- layout
+|       `-- default.tpl
+|-- controllers  コントローラ
+|   `-- xxx_controller.php
+`-- libs         ライブラリ
+    |-- Csrf.class.php
+    |-- Hash.class.php
+    |-- Random.class.php
+    |-- controller.class.php
+    |-- model.class.php
+    |-- util.php
+    `-- view.class.php
