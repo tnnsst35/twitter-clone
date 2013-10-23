@@ -1,6 +1,6 @@
 <?php
 class Hash {
-    public function passwordHash($password) {
+    public static function passwordHash($password) {
         $stretch = 10000;
         $salt    = "20111026_Sunrise_s-taninishi_t-arai_k-cho_k-hamada";
         $hash    = $password;

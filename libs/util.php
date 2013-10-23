@@ -1,5 +1,5 @@
 <?php
-define("ROOT", "/home/service/twitter/");
+define("ROOT", dirname(__FILE__) . '/../');
 
 define("SITE", "http://service.tnnsst35.com/twitter/");
 
